@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae28ff77-3e53-44f3-a2ad-3ba775318827" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javalanguage.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/Collect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/Grouping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/Lambda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/LambdaEx7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/MyFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/OptinalEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/StreamEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/StreamEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/StreamEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/StreamEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/StreamEx5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/메서드참조.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Lambda/스트림의최종연산.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/enums/EnumEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generics/Box.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ForkJoinEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/MyThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx17.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx18.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx19.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx20.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx21.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadEx9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadWaitEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadWaitEx2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadWaitEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/ThreadWaitEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/thread/VolatileEx.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\dmdsj\MyProject\javalanguage" />
+        <option value="C:\Users\dmdsj\MyProject\javalanguage\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Up5VbBcWqoWj7xwm4Uue4sEoiW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JavaLanguage" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dmdsj\MyProject\javalanguage\src\main\thread" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Grouping">
+    <configuration name="스트림의최종연산" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Lambda.스트림의최종연산" />
+      <module name="javalanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Collect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Lambda.Collect" />
+      <module name="javalanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grouping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Lambda.Grouping" />
+      <module name="javalanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptinalEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Lambda.OptinalEx" />
+      <module name="javalanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Lambda.StreamEx2" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamEx5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Lambda.StreamEx5" />
+      <module name="javalanguage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.Lambda.StreamEx2" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Grouping" />
+        <item itemvalue="Application.Collect" />
+        <item itemvalue="Application.스트림의최종연산" />
+        <item itemvalue="Application.OptinalEx" />
+        <item itemvalue="Application.StreamEx5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae28ff77-3e53-44f3-a2ad-3ba775318827" name="Default Changelist" comment="" />
+      <created>1576040720378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576040720378</updated>
+      <workItem from="1576040723813" duration="13046000" />
+      <workItem from="1576196114685" duration="8899000" />
+      <workItem from="1576206077334" duration="3364000" />
+      <workItem from="1577023618256" duration="3917000" />
+      <workItem from="1577082879854" duration="81000" />
+      <workItem from="1577103797614" duration="7326000" />
+      <workItem from="1577113533990" duration="25000" />
+      <workItem from="1577155077606" duration="5058000" />
+      <workItem from="1577205399787" duration="106000" />
+    </task>
+    <task id="LOCAL-00001" summary="Thread 공부 (뒷부분)">
+      <created>1576202969931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576202969931</updated>
+    </task>
+    <task id="LOCAL-00002" summary="람다(메서드 참조까지)">
+      <created>1576211297414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576211297414</updated>
+    </task>
+    <task id="LOCAL-00003" summary="람다: 스트림(두 스트림 연결 까지)">
+      <created>1577028055045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577028055045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="람다: Optional">
+      <created>1577108249092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577108249092</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Generics, enum">
+      <created>1577111362219</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577111362219</updated>
+    </task>
+    <task id="LOCAL-00006" summary="람다 마지막">
+      <created>1577162899264</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577162899265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Thread 공부 (뒷부분)" />
+    <MESSAGE value="람다(메서드 참조까지)" />
+    <MESSAGE value="람다: 스트림(두 스트림 연결 까지)" />
+    <MESSAGE value="람다: Optional" />
+    <MESSAGE value="Generics, enum" />
+    <MESSAGE value="람다 마지막" />
+    <option name="LAST_COMMIT_MESSAGE" value="람다 마지막" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
