@@ -103,3 +103,68 @@ javap -c HelloJava 여기가 바이트 코드
     - 부트 스트랩 클래스 로더 -  JAVA_HOME\lib에 있는 코어 자바 API를 제공한다. 최상위 우선순위를 가진 클래스 로더
     - 플랫폼 클래스로더 - JAVA_HOME\lib\ext 폴더 또는 java.ext.dirs 시스템 변수에 해당하는 위치에 있는 클래스를 읽는다.
     - 애플리케이션 클래스로더 - 애플리케이션 클래스패스(애플리케이션 실행할 때 주는 -classpath 옵션 또는 java.class.path 환경 변수의 값에 해당하는 위치)에서 클래스를 읽는다.
+
+---
+
+## 리플렉션
+리플렉션이란 객체를 통해 클래스의 정보를 분석해 내는 프로그램 기법을 말한다
+출처: [Minsub's Blog](https://gyrfalcon.tistory.com/entry/Java-Reflection)
+
+## 리플렉션 API
+- 리플렉션의 시작은 Class<T>
+- https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html
+#### Class<T>에 접근하는 방법
+- 모든 클래스를 로딩 한 다음 Class<T>의 인스턴스가 생긴다. “타입.class”로 접근할 수 있다.
+- 모든 인스턴스는 getClass() 메소드를 가지고 있다. “인스턴스.getClass()”로 접근할 수 있다.
+- 클래스를 문자열로 읽어오는 방법
+    - Class.forName(“FQCN”)
+    - 클래스패스에 해당 클래스가 없다면 ClassNotFoundException이 발생한다.
+#### Class<T>를 통해 할 수 있는 것
+- 필드 (목록) 가져오기
+- 메소드 (목록) 가져오기
+- 상위 클래스 가져오기
+- 인터페이스 (목록) 가져오기
+- 애노테이션 가져오기
+- 생성자 가져오기
+- ...
+
+### 리플렉션 정리 및 활용
+#### 주의사항
+- 지나친 사용은 성능 이슈를 야기할 수 있다. 반드시 필요한 경우에만 사용할 것
+- 컴파일 타임에 확인되지 않고 런타임 시에만 발생하는 문제를 만들 가능성이 있다.
+- 접근 지시자를 무시할 수 있다.
+
+#### 스프링
+- 의존성 주입
+- MVC 뷰에서 넘어온 데이터를 객체에 바인딩 할 때
+#### 하이버네이트
+- @Entity 클래스에 Setter가 없다면 리플렉션을 사용한다.
+#### JUnit
+- https://junit.org/junit5/docs/5.0.3/api/org/junit/platform/commons/util/ReflectionUtils.html
+#### 참고
+- https://docs.oracle.com/javase/tutorial/reflect/index.html
+
+---
+
+## JPA
+Jpa를 사용하면 Repo는 빈으로 등록하지도 않았고 인터페이스인데 빈으로 등록되고 인터페이스의 메서드들이 실행된다. 내가 구현하지 않았는데 어떻게 가능할까?
+- 프록시 클래스를 이용해서 구현한 것
+- 자바 Proxy를 이용해 스프링이 만들어지고 AOP가 만들어 졌다.
+- JPA는 스프링이 제공해주는 AOP를 통해 만들어 졌다.
+- RepositoryFactorySupport 참고
+
+## 다이나믹 프록시
+- 런타임에 특정 인터페이스들을 구현하는 클래스 또는 인스턴스를 만드는 기술
+- 유연하지 않아 스프링에선 AOP를 만들어 그걸 사용
+대표 사용처
+  - 스프링 데이터 JPA
+  - 스프링 AOP
+  - Mockito
+  - 하이버네이트 lazy initialzation
+
+### 클래스만으로 프록시 만들기
+서브 클래스를 만드는 방법의 단점
+- 상속을 사용하지 못하는 경우 프록시를 만들 수 없다.
+- Private 생성자만 있는 경우
+- Final 클래스인 경우
+- 인터페이스가 있을 때는 인터페이스의 프록시를 만들어 사용할 것.

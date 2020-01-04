@@ -26,10 +26,10 @@ public class Masul {
 //        )
 //                .method(named("pullOut")).intercept(FixedValue.value("Rabbit!!"))
 //                .make().saveIn(new File("C:\\Users\\dmdsj\\MyProject\\javalanguage\\TheJava\\target\\classes"));
-
-//        new ByteBuddy().redefine(Moja.class)
-//                .method(named("pullOut")).intercept(FixedValue.value("Rabbit!!"))
-//                .make().saveIn(new File("C:\\Users\\dmdsj\\MyProject\\javalanguage\\TheJava\\target\\classes"));
+//
+        new ByteBuddy().redefine(Moja.class)
+                .method(named("pullOut")).intercept(FixedValue.value("Rabbit!!"))
+                .make().saveIn(new File("C:\\Users\\dmdsj\\MyProject\\javalanguage\\TheJava\\target\\classes"));
 
         System.out.println(new Moja().pullOut());
     }

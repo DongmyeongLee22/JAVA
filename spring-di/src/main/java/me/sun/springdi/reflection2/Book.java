@@ -2,7 +2,7 @@ package me.sun.springdi.reflection2;
 
 public class Book {
 
-    public static String A = "A";
+    public static String A = "DD";
 
     private String B = "B";
 
