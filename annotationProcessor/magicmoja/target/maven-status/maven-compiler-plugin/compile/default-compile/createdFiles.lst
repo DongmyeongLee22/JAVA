@@ -1,0 +1,3 @@
+me\sun\MagicMojaProcessor.class
+me\sun\Magic.class
+META-INF\services\javax.annotation.processing.Processor
