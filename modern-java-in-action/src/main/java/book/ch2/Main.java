@@ -1,4 +1,4 @@
-package ch2;
+package book.ch2;
 
 import java.util.*;
 import java.util.function.Predicate;
