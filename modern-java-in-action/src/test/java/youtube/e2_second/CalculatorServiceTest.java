@@ -1,6 +1,4 @@
-package youtube;
-
-import static org.junit.Assert.*;
+package youtube.e2_second;
 
 /**
  * Created by Stranger on 2020/02/22

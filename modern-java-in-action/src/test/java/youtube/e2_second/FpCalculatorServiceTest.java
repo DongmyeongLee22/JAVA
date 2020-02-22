@@ -1,9 +1,9 @@
-package youtube;
+package youtube.e2_second;
 
-import org.junit.Assert;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by Stranger on 2020/02/22

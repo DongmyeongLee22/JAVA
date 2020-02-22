@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="youtube.FpCalculatorServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-21T17:07:38" hostname="ihyeeun-ui-MacBook-Air.local" time="0.005">
-  <properties/>
-  <testcase name="calculation" classname="youtube.FpCalculatorServiceTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

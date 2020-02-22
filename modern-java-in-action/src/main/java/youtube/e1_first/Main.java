@@ -1,4 +1,4 @@
-package youtube;
+package youtube.e1_first;
 
 import java.util.List;
 import java.util.stream.Collectors;
