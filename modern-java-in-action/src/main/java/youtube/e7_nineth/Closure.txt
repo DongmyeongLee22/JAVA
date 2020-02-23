@@ -1,0 +1,19 @@
+First Class Function
+Function = First Class Citizen
+           - parameter(파라미터로 넘길 수 있음)
+           - return(Function을 리턴할 수 있다)
+           - variable, data structure(저장 가능) ex)List, Array
+           ---> First Class의 특징
+
+           ** 이를 표현하기 위한 것 중 하나가 Anonymous Function 이다 **
+           --> method(i -> i + 1)
+           - 자바에서는 Anonymous Function을 Lambda Expression이라고 한다.
+
+Closure
+    int i = 100;
+    someMethod(x -> x * 2 + i);
+    --> someMethod안에서의 람다 표현식에서 i는 non-local variable(free variable)이다.
+    --> 이러한 non-local variable에 접근하는 것을 Closure라고 한다.
+
+
+
