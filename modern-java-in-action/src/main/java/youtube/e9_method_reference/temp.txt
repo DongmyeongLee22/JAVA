@@ -1,0 +1,4 @@
+자바8에서 Function 기능을 지원해주며 First Class Citizen인 Function을 사용할 수 있게 되었다.
+자바에서는 Function(First-Class)에 해당하는 것은 Method이다.
+허나 Method는 First Class의 특성인 파라미터로 넘기거나, 리턴을 할 수 없다.
+이를 지원하기 위해 Method Reference가 생긴 것이다.
