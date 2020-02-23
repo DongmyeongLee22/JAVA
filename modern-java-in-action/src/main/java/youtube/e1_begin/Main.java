@@ -1,4 +1,4 @@
-package youtube.e1_first;
+package youtube.e1_begin;
 
 import java.util.Arrays;
 import java.util.List;

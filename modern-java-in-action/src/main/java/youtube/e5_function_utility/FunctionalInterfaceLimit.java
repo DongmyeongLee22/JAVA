@@ -1,4 +1,4 @@
-package youtube.e5_seventh;
+package youtube.e5_function_utility;
 
 import java.math.BigDecimal;
 

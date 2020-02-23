@@ -1,4 +1,4 @@
-package youtube.e2_second;
+package youtube.e2_oop_example;
 
 /**
  * Created by Stranger on 2020/02/22

@@ -1,4 +1,4 @@
-package youtube.e7_nineth;
+package youtube.e7_closure;
 
 /**
  * Created by Stranger on 2020/02/23

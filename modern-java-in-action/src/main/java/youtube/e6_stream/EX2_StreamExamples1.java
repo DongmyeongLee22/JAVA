@@ -1,4 +1,4 @@
-package youtube.e6_eighth;
+package youtube.e6_stream;
 
 import java.math.BigInteger;
 import java.util.stream.IntStream;

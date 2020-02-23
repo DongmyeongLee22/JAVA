@@ -1,4 +1,4 @@
-package youtube.e6_eighth;
+package youtube.e6_stream;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

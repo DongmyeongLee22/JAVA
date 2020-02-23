@@ -1,6 +1,5 @@
-package youtube.e6_eighth;
+package youtube.e6_stream;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.LongStream;
 import java.util.stream.Stream;

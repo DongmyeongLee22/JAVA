@@ -1,4 +1,4 @@
-package youtube.e3_third;
+package youtube.e3_function;
 
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;

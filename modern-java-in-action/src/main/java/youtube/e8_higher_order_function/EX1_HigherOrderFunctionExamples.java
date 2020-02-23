@@ -1,10 +1,9 @@
-package youtube.e8_tenth;
+package youtube.e8_higher_order_function;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.*;
 

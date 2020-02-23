@@ -1,4 +1,4 @@
-package youtube.e2_second;
+package youtube.e2_oop_example;
 
 
 import org.junit.jupiter.api.Test;
