@@ -1,0 +1,11 @@
+Higher-order function
+- function을 실행했을 때 return 값이 function일 때
+     > Function<Integer, Function<Integer, Integer>>
+     > f = i -> { i2 -> ( i + i2 ) };
+     > f.apply(1).apply(9)
+- function이 function을 받을 때
+     > Function<Function<Integer, String>, String>
+     > f = x -> x.apply(10);
+     > f.apply(i -> "#" + i)
+     --> i -> "#" + i. apply(10);
+     --> "#10"
