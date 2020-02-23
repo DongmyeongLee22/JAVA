@@ -1,6 +1,7 @@
 package youtube.e3_third;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -15,7 +16,7 @@ public class FunctionInterfaceExample {
 
         Function<String, Integer> toInt = s -> Integer.valueOf(s);
 
-        List<Integer> integerList = List.of(1, 2, 3, 4, 5, 6, 7);
+        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
         List<Integer> filter = filter(integerList, i -> i < 5);
         System.out.println(filter);
     }

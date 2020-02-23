@@ -1,9 +1,11 @@
 package youtube.e5_seventh;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -30,7 +32,7 @@ public class FunctionalnterfaceExmaple {
 
         // 1
         final List<Product> products =
-                List.of(productA, productB, productC, productD, productE);
+                Arrays.asList(productA, productB, productC, productD, productE);
 
         // 2
         List<Product> expensiveProducts =
@@ -57,13 +59,13 @@ public class FunctionalnterfaceExmaple {
         System.out.println("Discount Products " + discountedProducts);
 
         // 5
-        System.out.println("Filtered Discount Products( > 50) " + filter(
-                discountedProducts, dp -> dp.getPrice().compareTo(new BigDecimal("50")) > 0
-        ));
+        Predicate<Product> greaterThan50 = dp -> dp.getPrice().compareTo(new BigDecimal("50")) > 0;
+        System.out.println("Filtered Discount Products( > 50) " +
+                filter(discountedProducts, greaterThan50));
         System.out.println("Expensive Total = " + total(expensiveProducts, Product::getPrice));
 
         // 6
-        Order order = new Order(1L, "on-123", List.of(
+        Order order = new Order(1L, "on-123", Arrays.asList(
                 new OrderedItem(1L, productA, 2),
                 new OrderedItem(2L, productC, 1),
                 new OrderedItem(3L, productD, 10)
@@ -72,7 +74,8 @@ public class FunctionalnterfaceExmaple {
                 od -> od.getProduct().getPrice().multiply(BigDecimal.valueOf(od.getQuantity()))));
     }
 
-    private static <T> List<T> filter(List<T> list, Predicate<T> p) {
+    // super 이해하자
+    private static <T> List<T> filter(List<T> list, Predicate<? super T> p) {
         List<T> ret = new ArrayList<>();
         for (T t : list) {
             if (p.test(t)) ret.add(t);
