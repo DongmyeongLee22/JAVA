@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Sanner {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         final String path = "/Users/LeeHyeEun/Downloads/DongProject/Blog/Test";
         String oriPath = path + "/Temp.md";
         BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(oriPath)));
@@ -10,10 +10,10 @@ public class Sanner {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File(writhPath), true));
         String line = "";
         boolean isCode = false;
-        while((line = bufferedReader.readLine()) != null){
-            if(line.contains("```")){
+        while ((line = bufferedReader.readLine()) != null) {
+            if (line.contains("```")) {
                 isCode = !isCode;
-                if(isCode){
+                if (isCode) {
                     line += "java";
                 }
             }
