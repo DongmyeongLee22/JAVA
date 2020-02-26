@@ -95,7 +95,7 @@ class Book implements Item
 -   이로 인해 Book은 캡슐화되어 API를 작게 유지할 수 있습니다.
 
 ```java
-public class Main {
+public class EX1_Serializable {
     public static void main(String[] args) {
         Item item = Item.createItem("Dexter");
 

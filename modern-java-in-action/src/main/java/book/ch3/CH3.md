@@ -183,3 +183,92 @@ public static void main(String[] args) {
 ```
 - String List의 값들을 모두 대문자로 변환하여 map해주는 Function 함수형 인터페이스를 정의하였습니다.
 - mapList에는 대문자 값들이 들어가 있게 될 것입니다.
+
+#### 4) Supplier
+- Supplier<T>는 파라미터가 존재하지 않지만 리턴값이 존제하는 함수형 인터페이스입니다.
+
+```java
+@FunctionalInterface
+public interface Supplier<T> {
+
+    T get();
+}
+```
+
+- 파라미터가 존재하지 않는데 리턴값이 존재하는 이 Supplier는 어디에서 사용될까요?
+- 간단한 예를 통해 Supplier의 사용처에 대해 알아보겠습니다.
+
+```java
+private static void printIfPositiveNumber(Integer integer, String string) {
+    if (integer > 0) {
+        System.out.println(string);
+    }
+}
+
+private static String complexOperation() {
+    try {
+        // 복잡한 연산 후 String을 반환한다.
+        TimeUnit.SECONDS.sleep(1);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    return "Hello, World!";
+}
+```
+- 파라미터의 integer가 양수일 경우에만 string을 출력하는 메서드가 있다고 가정해보겠습니다.
+- 그리고 파라미터의 String은 complexOperation()가 반환하는 값을 입력 파라미터로 받습니다.
+- complexOperation()은 1초간의 복잡한 연산 후 에 해당 Stirng을 반환한다고 가정해보겠습니다.
+
+```java
+public static void main(String[] args) {
+    final List<Integer> numberList = Arrays.asList(-3, -2, -1, 0, 1, 2, 3);
+
+    final long start = System.currentTimeMillis();
+    for (Integer integer : numberList) {
+        printIfPositiveNumber(integer, complexOperation());
+    }
+    System.out.println("동작 시간: " + (System.currentTimeMillis() - start) / 1000 + "sec");
+}
+
+// 출력
+Hello, World!
+Hello, World!
+Hello, World!
+동작 시간: 7sec
+```
+- numberList의 요소들을 forEach를 통해 위에서 정의한 메서드들을 실행시킵니다.
+- 모든 연산이 끝나고 동작 시간은 몇초가 될까요?
+- for문이 돌때마다 complexOperation()을 호출하므로 위의 출력과 같이 총 7초의 시간이 소모되는 것을 알 수 있습니다.
+
+<br>
+
+```java
+private static void printIfPositiveNumber2(Integer integer, Supplier<String> supplier) {
+    if (integer > 0) {
+        System.out.println(supplier.get());
+    }
+}
+```
+- 새로운 메서드를 만들어 파라미터로 String을 받지않고 Supplier<String>을 받은 후 출력 시 supplier.get()을 통해 원하는 값을 리턴받아 출력하도록 해보겠습니다.
+
+```java
+public static void main(String[] args) {
+        final List<Integer> numberList = Arrays.asList(-3, -2, -1, 0, 1, 2, 3);
+
+        final long start = System.currentTimeMillis();
+        for (Integer integer : numberList) {
+            printIfPositiveNumber2(integer, () -> complexOperation());
+        }
+        System.out.println("동작 시간: " + (System.currentTimeMillis() - start) / 1000 + "sec");
+}
+
+// 출력
+Hello, World!
+Hello, World!
+Hello, World!
+동작 시간: 3sec
+```
+- 그리고 위에서 했던 테스트를 똑같이 진행하지만 해당 메서드를 호출할 때 complexOperation()을 리턴하는 supplier 구현하여 넘겨주었습니다.
+- 출력을 보면 7초였던 동작 시간이 3초로 줄어든 것을 알 수 있습니다.
+- 그 이유는 람다식을 활용하여 complexOperation()을 supplier를 통해 넘겨주었기 때문입니다.
+- 그러므로 if(integer > 0) 조건이 만족하여 supplier.get() 메서드가 호출될 때 complexOperation()이 호출되기 때문에 동작 시간이 줄어들게 된 것입니다.
