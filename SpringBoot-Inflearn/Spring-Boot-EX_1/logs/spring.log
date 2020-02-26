@@ -1,0 +1,175 @@
+2020-02-26 20:30:06.475  INFO 22969 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 22969 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:30:06.482  INFO 22969 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:30:07.261  INFO 22969 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:30:07.345  INFO 22969 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 0 JPA repository interfaces.
+2020-02-26 20:30:08.077  INFO 22969 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:30:08.472  INFO 22969 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:30:08.609  INFO 22969 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:30:08.904  INFO 22969 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:30:09.614  INFO 22969 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:30:09.996  INFO 22969 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-26 20:30:10.629  INFO 22969 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-26 20:30:10.661  INFO 22969 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:30:11.055  INFO 22969 --- [main] m.s.s.SpringBootEx1Application           : Started SpringBootEx1Application in 5.289 seconds (JVM running for 6.814)
+2020-02-26 20:30:11.064  INFO 22969 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:30:11.066  INFO 22969 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-26 20:30:11.070  INFO 22969 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-26 20:30:11.076  INFO 22969 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-26 20:31:35.523  INFO 22975 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 22975 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:31:35.530 DEBUG 22975 --- [main] m.s.s.SpringBootEx1Application           : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-26 20:31:35.531  INFO 22975 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:31:36.689  INFO 22975 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:31:36.763  INFO 22975 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 JPA repository interfaces.
+2020-02-26 20:31:37.852  INFO 22975 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:31:38.249  INFO 22975 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:31:38.392  INFO 22975 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:31:38.673  INFO 22975 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:31:39.393  INFO 22975 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:31:39.787  INFO 22975 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-26 20:31:40.417  INFO 22975 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-26 20:31:40.446  INFO 22975 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:31:40.861  INFO 22975 --- [main] m.s.s.SpringBootEx1Application           : Started SpringBootEx1Application in 6.97 seconds (JVM running for 8.46)
+2020-02-26 20:31:40.873  INFO 22975 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:31:40.874  INFO 22975 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-26 20:31:40.879  INFO 22975 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-26 20:31:40.884  INFO 22975 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-26 20:31:53.194  INFO 22980 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 22980 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:31:53.207 DEBUG 22980 --- [main] m.s.s.SpringBootEx1Application           : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-26 20:31:53.207  INFO 22980 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:31:53.928  INFO 22980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:31:53.950  INFO 22980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-02-26 20:31:54.306  INFO 22980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:31:54.653  INFO 22980 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:31:54.800  INFO 22980 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:31:55.082  INFO 22980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:31:55.795  INFO 22980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:31:56.138  INFO 22980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-26 20:31:56.766  INFO 22980 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-26 20:31:56.795  INFO 22980 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:31:57.215  INFO 22980 --- [main] m.s.s.SpringBootEx1Application           : Started SpringBootEx1Application in 4.724 seconds (JVM running for 5.897)
+2020-02-26 20:31:57.224  INFO 22980 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:31:57.225  INFO 22980 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-26 20:31:57.229  INFO 22980 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-26 20:31:57.234  INFO 22980 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-26 20:34:50.087  INFO 22991 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 22991 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:34:50.098 DEBUG 22991 --- [main] m.s.s.SpringBootEx1Application           : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-26 20:34:50.099  INFO 22991 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:34:51.909  INFO 22991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:34:52.005  INFO 22991 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 JPA repository interfaces.
+2020-02-26 20:34:52.804  INFO 22991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:34:53.354  INFO 22991 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:34:53.497  INFO 22991 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:34:53.813  INFO 22991 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:34:54.621  INFO 22991 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:34:55.034  INFO 22991 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-26 20:34:55.718  INFO 22991 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-26 20:34:55.759  INFO 22991 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:34:56.292  INFO 22991 --- [main] m.s.s.SpringBootEx1Application           : Started SpringBootEx1Application in 7.918 seconds (JVM running for 10.594)
+2020-02-26 20:34:56.294  INFO 22991 --- [main] m.s.s.SpringBootEx1Application           : ============ Info Logger ============
+2020-02-26 20:34:56.295 DEBUG 22991 --- [main] m.s.s.SpringBootEx1Application           : ============ Debug Logger ============
+2020-02-26 20:34:56.301  INFO 22991 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:34:56.302  INFO 22991 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-26 20:34:56.307  INFO 22991 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-26 20:34:56.315  INFO 22991 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-26 20:35:05.147 DEBUG 23005 --- [main] .c.l.ClasspathLoggingApplicationListener : Application started with classpath: unknown
+2020-02-26 20:35:05.169 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring-boot.version' in PropertySource 'version' with value of type String
+2020-02-26 20:35:05.404  INFO 23005 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 23005 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:35:05.405 DEBUG 23005 --- [main] m.s.s.SpringBootEx1Application           : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-26 20:35:05.405  INFO 23005 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:35:05.405 DEBUG 23005 --- [main] o.s.boot.SpringApplication               : Loading source class me.sun.springbootex1.SpringBootEx1Application
+2020-02-26 20:35:05.498 DEBUG 23005 --- [main] o.s.b.c.c.ConfigFileApplicationListener  : Loaded config file 'file:/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/resources/main/application.properties' (classpath:/application.properties)
+2020-02-26 20:35:05.501 DEBUG 23005 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ca30bc1
+2020-02-26 20:35:05.561 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-02-26 20:35:05.607 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2020-02-26 20:35:05.709 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/listener/SampleListener2.class]
+2020-02-26 20:35:05.710 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/listener/SampleListener3.class]
+2020-02-26 20:35:05.711 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/runner/LoggerRunner.class]
+2020-02-26 20:35:05.714 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/runner/MyApplicationRunner.class]
+2020-02-26 20:35:05.715 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/runner/MyApplicationRunner2.class]
+2020-02-26 20:35:05.716 DEBUG 23005 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main/me/sun/springbootex1/runner/MyCommandLineRunner.class]
+2020-02-26 20:35:06.120 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.123 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.235 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.403 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.415 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.435 DEBUG 23005 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2020-02-26 20:35:06.490  INFO 23005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:35:06.498 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2020-02-26 20:35:06.506 DEBUG 23005 --- [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'me.sun.springbootex1'. Automatic @Repository and @Entity scanning is enabled.
+2020-02-26 20:35:06.508 DEBUG 23005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for JPA repositories in packages me.sun.springbootex1.
+2020-02-26 20:35:06.518  INFO 23005 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2020-02-26 20:35:06.676 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2020-02-26 20:35:06.681 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+2020-02-26 20:35:06.683 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+2020-02-26 20:35:06.747 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-02-26 20:35:06.749 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-02-26 20:35:06.750 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2020-02-26 20:35:06.755 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-02-26 20:35:06.756 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-02-26 20:35:06.758 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2020-02-26 20:35:06.759 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2020-02-26 20:35:06.759 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2020-02-26 20:35:06.759 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+2020-02-26 20:35:06.762 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'methodValidationPostProcessor'
+2020-02-26 20:35:06.775 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+2020-02-26 20:35:06.786 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-02-26 20:35:06.827 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+2020-02-26 20:35:06.836 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2020-02-26 20:35:06.837 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2020-02-26 20:35:06.841 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSourceInitializedPublisher'
+2020-02-26 20:35:06.848 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'entityManagerFactory'
+2020-02-26 20:35:06.850 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2020-02-26 20:35:06.850 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2020-02-26 20:35:06.872 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionAttributeSource'
+2020-02-26 20:35:06.889 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionInterceptor'
+2020-02-26 20:35:06.890 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+2020-02-26 20:35:06.915 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+2020-02-26 20:35:06.915 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+2020-02-26 20:35:06.927 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration'
+2020-02-26 20:35:06.930 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSource'
+2020-02-26 20:35:06.931 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+2020-02-26 20:35:06.935 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2020-02-26 20:35:06.976 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2020-02-26 20:35:07.033 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+2020-02-26 20:35:07.036 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2020-02-26 20:35:07.037 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.context.annotation.AnnotationConfigApplicationContext@ca30bc1'
+2020-02-26 20:35:07.043 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2020-02-26 20:35:07.048 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2020-02-26 20:35:07.050 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'dataSource'
+2020-02-26 20:35:07.050 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+2020-02-26 20:35:07.051 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@119020fb'
+2020-02-26 20:35:07.051 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+2020-02-26 20:35:07.054 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+2020-02-26 20:35:07.055 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+2020-02-26 20:35:07.064 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'entityManagerFactoryBuilder'
+2020-02-26 20:35:07.065 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jpaVendorAdapter'
+2020-02-26 20:35:07.083 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'entityManagerFactoryBuilder' via factory method to bean named 'jpaVendorAdapter'
+2020-02-26 20:35:07.086 DEBUG 23005 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'entityManagerFactoryBuilder'
+2020-02-26 20:35:07.097 DEBUG 23005 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2020-02-26 20:35:07.098  INFO 23005 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:35:07.253  INFO 23005 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:35:07.288 DEBUG 23005 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:35:07.307  INFO 23005 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:35:07.507  INFO 23005 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:35:08.206  INFO 23005 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:35:16.467  INFO 23012 --- [main] m.s.s.SpringBootEx1Application           : Starting SpringBootEx1Application on ihyeeun-ui-MacBook-Air.local with PID 23012 (/Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1/build/classes/java/main started by LeeHyeEun in /Users/LeeHyeEun/Downloads/DongProject/JAVA/SpringBoot-Inflearn/Spring-Boot-EX_1)
+2020-02-26 20:35:16.471 DEBUG 23012 --- [main] m.s.s.SpringBootEx1Application           : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-26 20:35:16.472  INFO 23012 --- [main] m.s.s.SpringBootEx1Application           : No active profile set, falling back to default profiles: default
+2020-02-26 20:35:17.120  INFO 23012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-26 20:35:17.177  INFO 23012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 JPA repository interfaces.
+2020-02-26 20:35:17.638  INFO 23012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-26 20:35:17.814  INFO 23012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-26 20:35:17.887  INFO 23012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-26 20:35:17.991  INFO 23012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-26 20:35:18.088  INFO 23012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-26 20:35:18.209  INFO 23012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-26 20:35:18.809  INFO 23012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-26 20:35:18.834  INFO 23012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:35:19.201  INFO 23012 --- [main] m.s.s.SpringBootEx1Application           : Started SpringBootEx1Application in 3.363 seconds (JVM running for 4.166)
+2020-02-26 20:35:19.203  INFO 23012 --- [main] m.s.s.SpringBootEx1Application           : ============ Info Logger ============
+2020-02-26 20:35:19.209 DEBUG 23012 --- [main] m.s.s.SpringBootEx1Application           : ============ Debug Logger ============
+2020-02-26 20:35:19.209 TRACE 23012 --- [main] m.s.s.SpringBootEx1Application           : ============ Trace Logger ============
+2020-02-26 20:35:19.216  INFO 23012 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-26 20:35:19.217  INFO 23012 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-26 20:35:19.222  INFO 23012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-26 20:35:19.227  INFO 23012 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
