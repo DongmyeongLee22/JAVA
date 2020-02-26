@@ -1,4 +1,4 @@
-package me.sun.springbootex1;
+package me.sun.springbootex1.controller;
 
 import lombok.Data;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,6 +28,12 @@ public class SampleController {
     public User createUser(@RequestBody User user) {
         return user;
     }
+
+    /** 스프링부트가 JSP를 권장하지 않음
+     *  - 스프링부트는 독립적으로 실행가능한 JAR로 패키징하고 임베디드 톰캣으로 애플리케이션을 빠르고 쉽게 배포하길 바란다.
+     *  - 하지만 JSP를 사용하면 JAR로 패키징할 수 없고 WAR로 패키징해야한다.
+     *  - 가장 최근에 만들어진 서블릿 엔진인 Undertow는 JSP자체를 지원하지도 않는다.
+     */
 }
 
 @Data

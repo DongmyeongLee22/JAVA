@@ -10,7 +10,7 @@ public class SpringBootEx1Application {
 
     public static void main(String[] args) {
         final SpringApplication app = new SpringApplication(SpringBootEx1Application.class);
-        app.setWebApplicationType(WebApplicationType.NONE);
+        app.setWebApplicationType(WebApplicationType.SERVLET);
         app.run(args);
     }
 

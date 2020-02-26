@@ -21,8 +21,13 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.6'
 
+    // js의 라이브러리 혹은 프레임워크등을 webjars로 받아와 사용할 수 있다.
+    compile group: 'org.webjars.bower', name: 'jquery', version: '3.4.1'
+
+    // html을 단위 테스트하기 위한 툴
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
