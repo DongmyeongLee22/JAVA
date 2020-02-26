@@ -1,0 +1,1 @@
+docker run -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=sunlee -e POSTGRES_DB=springboot --name postgres_boot -d postgres

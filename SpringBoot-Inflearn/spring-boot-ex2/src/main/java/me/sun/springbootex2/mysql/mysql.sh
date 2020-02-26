@@ -1,0 +1,1 @@
+docker run -p 3306:3306 --name mysql_boot -e MYSQL_ROOT_PASSWORD=1 -e MYSQL_DATABASE=springboot -e MYSQL_USER=sunlee -e MYSQL_PASSWORD=pass -d mysql
