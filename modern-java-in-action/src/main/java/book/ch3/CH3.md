@@ -272,3 +272,169 @@ Hello, World!
 - 출력을 보면 7초였던 동작 시간이 3초로 줄어든 것을 알 수 있습니다.
 - 그 이유는 람다식을 활용하여 complexOperation()을 supplier를 통해 넘겨주었기 때문입니다.
 - 그러므로 if(integer > 0) 조건이 만족하여 supplier.get() 메서드가 호출될 때 complexOperation()이 호출되기 때문에 동작 시간이 줄어들게 된 것입니다.
+
+
+#### 기본타입 특화
+
+```java
+public static void main(String[] args) {
+    IntPredicate p1 = (int i) -> i % 2 == 0;
+    // 박싱이 없어 메모리 효율적
+
+    Predicate<Integer> p2 = (Integer i) -> i % == 0;
+    // 박싱하기 때문에 힙 영역어 저장되어 메모리 비효율적
+}
+```
+- 기본타입이 특화된 타입을 제공한다.
+
+### 3.5 형식 검사, 형식 추론, 제약
+#### 형식 검사
+- 람다식으로 결정될 타입을 **Target Type** 이라고 한다.
+
+```java
+filetr(i, a -> a.getWeight() > 10);
+// 이경우 filter의 두번째 메서드의 타입이 타겟 타입일 것이다.
+```
+
+#### void는 독특한 호환을 가진다.
+```java
+Predicate<Integer> p =  i -> list.add(i);
+Consumer<Integer> p2 = i -> list.add(i);
+```
+- Consumer는 반환값이 void이지만 list.add는 boolean을 반환한다.
+- 하지만 이를 유효한 코드로 인식한다.
+
+
+#### 형식 추론
+- 함수 디스크립터를 통해 알 수 있는 정보가 충분하면 형식을 생략해도 된다.
+- 함수 디스크립터는 람다 표현식의 시그니처를 서술하는 메서드이다.
+
+#### 지역 변수 사용
+- 람다는 외부 변수를 사용할 수 있다.
+- 하지만 그 변수들은 final 기능을 가져야 한다.
+
+**이유**
+- 인스턴스 변수와 지역 변수는 태생부터 다르다.
+- 인스턴스 변수는 힙에 저장되지만 지역 변수는 스택에 위치한다.
+- 만약 지역 변수가 변경될 수 있는 값인데 람다식에 넘어간다면 해당 값이 또 다른 람다식으로 전파될지 알 수 없다.
+- 여러 이유가 있겠지만 병렬화를 사용하기 위해선 해당 값이 변경되지 않음을 확신할 수 있어야 한다.
+
+### 3.6 메서드 참조
+- 기존 메서드를 람다 처럼 전달하여 일급 함수의 특징을 지니게 할 수 있다.
+
+```java
+public void test() {
+    // 1
+    List<String> str = Arrays.asList("a", "b", "A");
+    str.sort((s1, s2) -> s1.compareToIgnoreCase(s2));
+    str.sort(String::compareToIgnoreCase);
+
+    // 2
+    Function<String, Integer> f = (s) -> Integer.parseInt(s);
+    Function<String, Integer> f2 = Integer::parseInt;
+
+    // 3
+    Function<String, Boolean> isContainA = s -> this.containA(s);
+    Function<String, Boolean> isContainA2 = this::containA;
+    }
+
+    private boolean containA(String s){
+    return s.contains("A");
+    }
+}
+```
+- 첫번째 파라미터가 호출하는 객체고, 두번째 파라미터가 호출하는 메서드의 파라미터일 경우 해당 클래스로 메서드 참조가 가능하다.
+- 2, 3과 같이 타입이 호출하면 타입으로, 객체가 호출하면 객체로 사용 가능하다.
+
+#### 생성자 참조
+```java
+public static void main(String[] args) {
+    // 기본 생성자
+    Supplier<Temp> t = () -> new Temp();
+    Supplier<Temp> t2 = Temp::new;
+
+    // 파라미터가 있는 생성자
+    Function<String, Temp> t3 = s -> new Temp(s);
+    Function<String, Temp> t4 = Temp::new;
+}
+
+static class Temp{
+    private String name;
+
+    public Temp() {
+    }
+
+    public Temp(String name) {
+        this.name = name;
+    }
+}
+```
+- 기본 생성자, 파라미터가 있는 생성자 모두 생성자 참조가 가능하다.
+
+### 3.8 람다 표현식을 조합할 수 잇는 유용한 메서드들
+#### Comparator 활용
+```java
+public static void main(String[] args) {
+    List<Apple> apples = Arrays.asList(
+            new Apple(3, "A"),
+            new Apple(7, "B"),
+            new Apple(1, "A"),
+            new Apple(2, "B")
+    );
+
+    // comparing으로 정렬을 간단하게 정의할 수 있다.
+    Comparator<Apple> comparator = Comparator.comparing(Apple::getWeight);
+    apples.sort(comparator);
+    System.out.println(apples);
+
+    // reversed를 통해 정렬을 뒤집을 수 있다.
+    apples.sort(comparator.reversed());
+    System.out.println(apples);
+
+    // 같을 경우 추가 정렬 조건 적용 가능
+    apples.sort(comparator.thenComparing(Apple::getType));
+    System.out.println(apples);
+}
+
+@Getter
+@ToString
+@AllArgsConstructor
+static class Apple{
+    int weight;
+    String type;
+}
+```
+
+#### Predicate 활용
+```java
+public static void main(String[] args) {
+    Predicate<Apple> isAType = a -> "A".equals(a.getType());
+
+    // negate로 조건의 반대를 적용할 수 있음
+    Predicate<Apple> isNotAType = isAType.negate();
+
+    // (isATupe && weight > 10) || (weight < 3)
+    Predicate<Apple> complexPredicate = isAType.and(a -> a.getWeight() > 10)
+                                               .or(a -> a.getWeight() < 3);
+}
+```
+- negate(), and(), or()등 유용한 메서드들이 존재한다.
+
+#### Function 활용
+```java
+public static void main(String[] args) {
+    Function<Integer, Integer> plus2 = i -> i + 2;
+    Function<Integer, Integer> mul3 = i -> i * 3;
+
+    // 호출하는 plus2부터 적용됨. plus2 -> mul3
+    Function<Integer, Integer> plus2AndMul3 = plus2.andThen(mul3);
+    System.out.println(plus2AndMul3.apply(3));
+    // ( 3 + 2 ) * 3 = 15;
+
+    // 메서드 전달 인자부터 적용됨. mul3 -> plus 2
+    Function<Integer, Integer> mul3AndPlus2 = plus2.compose(mul3);
+    System.out.println(mul3AndPlus2.apply(3));
+    // ( 3 * 3 ) + 2 = 11;
+}
+```
+- andthen, compose와 같이 함수를 연결시킬 수 있는 메서드들이 존재한다.
