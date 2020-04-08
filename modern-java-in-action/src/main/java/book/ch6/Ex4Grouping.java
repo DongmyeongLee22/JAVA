@@ -111,5 +111,8 @@ public class Ex4Grouping {
     return IntStream.rangeClosed(2, n).boxed().collect(partitioningBy(Ex4Grouping::isPrime));
   }
 
+
+  }
+
   enum CaloricLevel {DIET, NORMAL, FAT}
-}
+

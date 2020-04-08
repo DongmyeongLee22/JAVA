@@ -287,3 +287,35 @@ public class Ex5ToListCollector<T> implements Collector<T, List<T>, List<T>> {
   }
 }
 ```
+
+
+### 소수 확인 Collector 구현
+- 사실 소수인지를 확인하려면 이전의 소수들에 대한 나머지가 0인 경우만 찾으면 된다.
+- 하지만 위에서 사용한 방법은 모든 수를 확인하기 때문에 비효율적이다.
+- 이는 Collector를 구현하여 해결할 수 있다.
+- [코드 확인](Ex6CustomCollector.java)
+- 따로 Collector를 구현하지 않고 collect에 직접 사용할 수 도 있다.
+
+```java
+static public Map<Boolean, List<Integer>> partitionPrimes(int n) {
+  return IntStream.rangeClosed(2, n)
+    .boxed()
+    .collect(
+      // 누적자 초기화
+      () -> new HashMap<>() {
+        {
+          put(true, new ArrayList<>());
+          put(false, new ArrayList<>());
+        }
+      },
+      // 누적자와 요소를 이용하여 값 추가
+      (acc, candidate) -> acc.get(isPrime3(acc.get(true), candidate)).add(candidate),
+      // 병렬 처리시 필요한 합치기
+      (map1, map2) -> {
+        map1.get(true).addAll(map2.get(true));
+        map1.get(false).addAll(map2.get(false));
+      }
+    );
+}
+```
+- 한번만 사용이 필요하다면 간단하게 collect안에서 구현할 수 있겠지만 재사용성과 가독성을 위해서라면 Collector를 구현하여 사용하는게 좋을 것이다.
