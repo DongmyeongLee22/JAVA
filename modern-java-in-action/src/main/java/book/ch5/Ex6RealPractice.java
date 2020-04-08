@@ -16,14 +16,7 @@ public class Ex6RealPractice {
         Trader cobb = new Trader("Cobb", "Busan");
         Trader duna = new Trader("Duna", "Busan");
 
-        List<Transaction> transactions = Arrays.asList(
-                new Transaction(duna, 2011, 300),
-                new Transaction(jayden, 2012, 1000),
-                new Transaction(jayden, 2011, 400),
-                new Transaction(dexter, 2012, 710),
-                new Transaction(dexter, 2012, 700),
-                new Transaction(cobb, 2012, 950)
-        );
+        List<Transaction> transactions = getTransactions(jayden, dexter, cobb, duna);
 
         // 1.
         List<Transaction> transactions2012Sorted = transactions.stream()
@@ -57,6 +50,17 @@ public class Ex6RealPractice {
                                        .distinct()
                                        .sorted()
                                        .collect(Collectors.toList()));
+    }
+
+    public static List<Transaction> getTransactions(Trader jayden, Trader dexter, Trader cobb, Trader duna) {
+        return Arrays.asList(
+                    new Transaction(duna, 2011, 300),
+                    new Transaction(jayden, 2012, 1000),
+                    new Transaction(jayden, 2011, 400),
+                    new Transaction(dexter, 2012, 710),
+                    new Transaction(dexter, 2012, 700),
+                    new Transaction(cobb, 2012, 950)
+            );
     }
 }
 
